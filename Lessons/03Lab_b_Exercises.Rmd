@@ -1,0 +1,68 @@
+---
+title: "Lab 3a - Exercises"
+author: "Environmental Data Analytics | John Fay and Luana Lima "
+date: "Fall 2024"
+output: pdf_document
+---
+
+## Set up the session
+```{r Setup}
+#Import packages
+library(tidyverse); library(lubridate); library(here)
+
+#Check workspace
+here()
+
+#Import data
+pm25 <- read.csv(
+  #----ENTER THE FILENAME HERE, USING THE here() PACKAGE----
+  stringsAsFactors = TRUE,
+  colClasses = c("Site.ID"='factor')
+)
+
+#Fix the date
+pm25$Date <- mdy(pm25$Date)
+
+```
+
+
+## Explore properties of the dataframe
+-   How many different sites are included in the data set?
+-   What is the mean daily PM2.5 concentration?
+-   In what units of are PM 2.5 concentrations reported?
+
+```{r Explore the data}
+# Compute the number of different sites
+
+
+# Compute the mean and median PM 2.5 concentration
+
+
+# What are the units
+
+
+# What is the date range (min and max dates)
+
+```
+
+
+## Plot distribution of values
+
+-   Number of samples using each different source 
+-   Distribution of daily mean concentration values
+-   Distribution of daily mean concentration, by source*
+  *   There are multiple ways to visualize this...
+
+```{r}
+#Number of samples using each different source 
+
+
+#Distribution of daily mean concentration values
+
+
+#Distribution of daily mean concentration, by source
+
+
+
+```
+
