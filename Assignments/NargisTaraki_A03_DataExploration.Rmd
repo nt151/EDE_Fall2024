@@ -75,7 +75,7 @@ Studying forest litter and woody debris is important because they play a vital r
 ```{r}
 dim(Neonics)
 
-##4623 are the number of rows inthe dataset,whereas 30 is the number of columns.
+## 4623 are the number of rows inthe dataset,whereas 30 is the number of columns.
 ```
 
 6.  Using the `summary` function on the "Effect" column, determine the most common effects that are studied. Why might these effects specifically be of interest? [Tip: The `sort()` command is useful for listing the values in order of magnitude...]
@@ -112,9 +112,7 @@ Researchers focus on these species, especially honey bees and bumblebees, becaus
 
 ```{r}
 class(Neonics$Conc.1..Author.)
-#Here I am changing factor to character
 unique(Neonics$Conc.1..Author.)
-class(Neonics$Conc.1..Author.)
 summary(Neonics$Conc.1..Author.)
 ```
 
