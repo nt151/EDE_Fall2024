@@ -1,7 +1,8 @@
 ---
 title: "Exercise: Markdown"
 author: "Environmental Data Analytics | John Fay and Luana Lima "
-output: pdf_document
+output:  html_document
+toc: Ture
 geometry: margin=2.54cm
 editor_options: 
   chunk_output_type: console
@@ -9,7 +10,7 @@ editor_options:
 
 ## Set up the coding environment
 
-```{r setup}
+```{r, echo=TRUE , Warning=False , setup}
 #Load packages
 library(tidyverse);library(here);library(lubridate)
 
@@ -41,6 +42,13 @@ nutrient_data_tn <- nutrient_data %>%
     max_tn_ug = max(tn_ug),
     sd_tn_ug = sd(tn_ug)
   )
+
 ```
 
 ## Report the summary
+
+
+```{r, echo=TRUE , Warning=False , setup}
+kable(summary_PM25)
+summary(iris)
+```
